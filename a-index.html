@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Liga Siete 2013</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="css/bootstrapman.css" rel="stylesheet">
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<style type="text/css">
+body {
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+</style>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script src="js/jquery.facebook.feed.js"></script>
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../assets/ico/favicon.png">
+</head>
+
+<body>
+<div class="container">
+  <div class="tempnav">
+    <h6>Templates</h6>
+    <a href="a-index.html">A Home</a> <a href="a-rightsidebar.html" >A Right Sidebar</a> <a href="a-fullwidth.html">A Fullwidth</a> <a href="b-leftsidebar.html">B Left Sidebar</a> <a href="b-fullwidth.html">B Fullwidth</a> </div>
+  <div class="headcont">
+    <div class="logo"><a href="#"><img src="./img/logo.png" /></a></div>
+    <div class="l7login">
+      <form class="form-inline">
+        <input type="text" class="input-small" placeholder="Email">
+        <input type="password" class="input-small" placeholder="Password">
+        <button type="submit" class="btn">Ingresar</button>
+      </form>
+    </div>
+    <div class="l7tv"><a href="#"><img src="./img/l7tv.png" /></a></div>
+    <div class="l7menu">
+      <ul class="dpdown">
+        <li class="mainlist"><a href="#">Liga Siete</a>
+          <ul class="sub_menu">
+            <li><a href="#">Liga Siete TV</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Servicios</a></li>
+          </ul>
+        </li>
+        <li class="mainlist"><a href="#">Hombres</a>
+          <ul class="sub_menu">
+            <li><a  href="#">Miercoles</a></li>
+            <li><a  href="#">Jueves</a></li>
+            <li><a  href="#">Viernes</a></li>
+            <li><a  href="#">Sabado</a></li>
+            <li><a  href="#">Domingo</a></li>
+          </ul>
+        </li>
+        <li class="mainlist"><a href="#">Mujeres</a>
+          <ul class="sub_menu">
+            <li><a href="#">Sabado</a></li>
+            <li><a href="#">Domingo</a></li>
+          </ul>
+        </li>
+        <li class="mainlist"><a href="#auspician">Auspician</a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="maincont">
+    <div class="rsocialbtn"> <a class="btn_fb" href="#" target="_blank"><img src="./img/fb.gif" title="Hazte Fan en Facebook"/></a> <a class="btn_tw" href="#" target="_blank"><img src="./img/tw.gif" title="Siguenos en Twitter"/></a> </div>
+    <div class="lcol">
+      <div class="vidtv"> 
+        <!-- Define the Div for Gallery --> 
+        <!-- 1. Add class html5gallery to the Div --> 
+        <!-- 2. Define parameters with HTML5 data tags -->
+        <div style="display:none;margin:0 auto;" class="html5gallery" data-skin="gallery" data-width="767" data-height="432"> 
+          
+          <!-- Add Vimeo video to Gallery --> 
+          <a href="http://player.vimeo.com/video/45673208?title=0&amp;byline=0&amp;portrait=0"><img src="images/v1.jpg" alt="Entrevista Diego Morales"></a> <a href="http://player.vimeo.com/video/45461733?title=0&amp;byline=0&amp;portrait=0"><img src="images/v1.jpg" alt="Marcas Liga Siete"></a> <a href="http://player.vimeo.com/video/46911910?title=0&amp;byline=0&amp;portrait=0"><img src="images/v1.jpg" alt="5to Ranking de Goles + Premiación"></a> <a href="http://player.vimeo.com/video/45673208?title=0&amp;byline=0&amp;portrait=0"><img src="images/v1.jpg" alt="Vimeo Video"></a> </div>
+      </div>
+    </div>
+    <div class="rcol">
+      <div class="pub300">Imagen Aca</div>
+      <h5 class="htitle"><img src="img/icon_fb.png">Via Facebook » <a class="fbhover" href="#">Hazte Fan!</a></h5>
+      
+      <!-- FACEBOOK FEED --> 
+      
+      <script id="template-fbfeed" type="text/x-jquery-tmpl">
+		<ul>
+			{{each(i, item) items}}
+			<li class="fbfeed_n">
+				{{if item.message}}${item.message}{{else}}${item.name}{{/if}}
+				</br><span style="font-size: 10px; color: #ccc;">Fecha: ${item.date}, Hora: ${item.time} <a style="font-style: italic;" target="_blank" href="${item.permalink}">Ver Post</a></span>
+	
+				
+			</li>
+			{{/each}}
+		</ul>
+	</script>
+      <div id="target-feed"></div>
+      <script>
+		var uid = '191407827561897';
+
+		$(function () {
+
+			$('#target-feed').fbfeed({
+				id: uid,
+				token: '114370451982089|Z1bWi06KeQrp_mu-7MgPTaKaeqA',
+			});
+		});
+	</script> 
+      
+      <!-- END FEED --> 
+      
+    </div>
+  </div>
+  <div class="pub1072">Imagen Aca</div>
+  <div class="midcont">
+    <div class="widget_h4">&Uacute;ltimas Noticias » <a href="#">Ver Todas</a></div>
+    <div class="n1">
+      <div class="n1th"></div>
+      <h4>Lorem ipsum dolor</h4>
+      <p>Consectetur adipiscing elit. Nunc nec mi quis velit eleifend euismod sed eget lorem. In consequat blandit ante <a class="mas" href="#">...Ver m&aacute;s</a></p>
+    </div>
+    <div class="n1">
+      <div class="n1th"></div>
+      <h4>Lorem ipsum dolor</h4>
+      <p>Consectetur adipiscing elit. Nunc nec mi quis velit eleifend euismod sed eget lorem. In consequat blandit ante <a class="mas" href="#">...Ver m&aacute;s</a></p>
+    </div>
+    <div class="n1">
+      <div class="n1th"></div>
+      <h4>Lorem ipsum dolor</h4>
+      <p>Consectetur adipiscing elit. Nunc nec mi quis velit eleifend euismod sed eget lorem. In consequat blandit ante <a class="mas" href="#">...Ver m&aacute;s</a></p>
+    </div>
+    <div class="n1_last">
+      <div class="n1th"></div>
+      <h4>Lorem ipsum dolor</h4>
+      <p>Consectetur adipiscing elit. Nunc nec mi quis velit eleifend euismod sed eget lorem. In consequat blandit ante <a class="mas" href="#">...Ver m&aacute;s</a></p>
+    </div>
+  </div>
+  
+  <!-- Example row of columns --> 
+  
+</div>
+<!-- /container -->
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div id="auspician"  class="navbar-inner">
+    <div class="container">
+      <div class="bottomcont">
+        <h4>Auspician y Colaboran</h4>
+        <div class="a1"></div>
+        <div class="a1"></div>
+        <div class="a1"></div>
+        <div class="a1"></div>
+        <div class="a1"></div>
+        <div class="a1"></div>
+        <div class="a1"></div>
+        <div class="a1_last"></div>
+      </div>
+      <div style="margin-top:30px;float:left;"><img src="img/subfootheading.png" /></div>
+      <div class="subbottomcont">
+        <div class="sc1">
+          <h5>Acerca de LigaSiete</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec mi quis velit eleifend euismod sed eget lorem. In consequat blandit ante, at interdum est venenatis vel. Fusce vitae luctus diam, quis ultrices nisl. Suspendisse eget neque sit amet ipsum aliquam placerat. </p>
+        </div>
+        <div class="sc2">
+          <h5>LigaSiete</h5>
+          <ul>
+            <li><a href="#">Liga Siete TV</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Servicios</a></li>
+          </ul>
+          <h5>Redes Sociales</h5>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Vimeo</a></li>
+          </ul>
+        </div>
+        <div class="sc3">
+          <h5>Copa Hombres</h5>
+          <ul>
+            <li><a href="#">Miercoles - Club Oriente</a></li>
+            <li><a href="#">Jueves - Club Oriente</a></li>
+            <li><a href="#">Viernes - Club Oriente</a></li>
+            <li><a href="#">Sabado - Fortin UC </a></li>
+            <li><a href="#">Domingo - Fortin UC </a></li>
+          </ul>
+          <h5>Copa Mujeres</h5>
+          <ul>
+            <li><a href="#">Sabado - Col. San Pedro Nolasco</a> </li>
+            <li><a href="#">Domingo - Col. San Pedro Nolasco</a></li>
+          </ul>
+        </div>
+        <div class="sc4">
+          <h5>Contactanos</h5>
+          <form method="POST" action="contact-form-submission.php" class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="input1">Nombre</label>
+              <div class="controls">
+                <input type="text" name="contact_name" id="input1" placeholder="Your name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input2">Email</label>
+              <div class="controls">
+                <input type="text" name="contact_email" id="input2" placeholder="Your email address">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input3">Mensaje</label>
+              <div class="controls">
+                <textarea name="contact_message" id="input3" rows="8" class="span5" placeholder="The message you want to send to me."></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <input type="hidden" name="save" value="contact">
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/jquery.js"></script> 
+<script type="text/javascript" src="html5gallery/html5gallery.js"></script>
+</body>
+</html>
